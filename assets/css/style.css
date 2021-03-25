@@ -6,6 +6,7 @@
     --phthaloGreen:#1D2D10;
     --white:#fdfdfd;
     --gray:#d6d8d2;
+    --steelBlue:#5880A6;
     --text-color1:rgb(15, 43, 2);
     --text-color2:rgb(255, 241, 220);
     --shadow:rgb(22, 100, 20);
@@ -55,7 +56,77 @@ body{
 .hover-in-shadow:hover:after{
     box-shadow: var(--inner-shadow);
 }
-
+.effect-wrap .effect{
+    position: absolute;
+    z-index: -1;
+}
+.effect-1{
+    width: 30px;
+    height: 30px;
+    border: 4px solid #9AAC72 ;
+    right: 10%;
+    top : 10%;
+    animation: spin 10s linear infinite;
+}
+.effect-2{
+  width: 100px;
+  height: 100px;
+  background:var(--color);
+  position: relative;
+  left:-40px;
+  border: 6px solid var(--shadow2) ;
+  bottom : 30%;
+  display: flex;
+  border-radius: 50%;
+  animation: topBounce 5s infinite;
+}
+.effect-2 div{
+    justify-content: space-between;
+}
+.effect-3{
+    width: 180px;
+    height: 180px;
+    border: 20px solid var(--redwood) ;
+    border-radius: 50%;
+    left: 30%;
+    top:-100px;
+    animation: leftBounce 5s infinite;
+}
+.effect-4{
+    width: 180px;
+    height: 180px;
+    border: 20px solid var(--redwood) ;
+    border-radius: 50%;
+    left: 30%;
+    top:-100px;
+    animation: leftBounce 5s infinite;
+}
+  
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes topBounce {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(25px);
+    }
+}
+@keyframes leftBounce {
+    0%,100%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(25px);
+    }
+}
 header{
     padding: 20px 15px;
     width:100%;
@@ -189,6 +260,9 @@ header .hamburger-btn span::after{
     border-radius: 30px;
 }
 /*Home*/
+.home-section{
+    position: relative;
+}
 .home-section .full-screen{
     padding: 50px 0;
     min-height: 100vh;
