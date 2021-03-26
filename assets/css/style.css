@@ -414,7 +414,18 @@ header .hamburger-btn span::after{
     padding: 80px 0 80px;
     min-height: 100vh;
 }
-
+.project-section .project-item{
+    flex: 0 0 33.33%;
+    max-width:33.33%;
+    padding: 15px;
+}
+.project-section .project-item-inner{
+    padding: 15px;
+    border-radius: 5px;
+}
+.project-item-title{
+    margin: 20px;
+}
 /* header links*/
 /* header nav ul{
     width: fit-content;
