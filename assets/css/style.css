@@ -408,9 +408,12 @@ header .hamburger-btn span::after{
 }
 .about-section .info .btn {
  margin: 30px 20px 0 0;
-
 }
-
+/*  My projects*/
+.project-section{
+    padding: 80px 0 80px;
+    min-height: 100vh;
+}
 
 /* header links*/
 /* header nav ul{
