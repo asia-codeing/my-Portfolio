@@ -523,6 +523,7 @@ header .hamburger-btn span::after{
     .about-section .about-img {
         flex: 0 0 100%;
         padding: 0px 20px;
+        margin-left: 0;
     }
     .about-section .info {
         flex: 0 0 99%;
