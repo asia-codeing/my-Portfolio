@@ -187,6 +187,9 @@ body{
     font-weight: 600;
     color: var(--redwood);
 }
+.section.hide{
+    display: none;
+}
 /*-----Header-----*/
 header{
     padding: 20px 15px;
@@ -258,9 +261,12 @@ header .hamburger-btn span::after{
     z-index: -1;
     opacity: 0;
     visibility: hidden;
-    overflow-y:auto;
-    /* display: none; */
-    
+    overflow-y:auto;  
+}
+.nav-menu.open{
+    visibility: visible;
+    z-index: 999;
+    opacity: 1;
 }
 
 .nav-menu .close-nav-menu{
@@ -384,7 +390,7 @@ header .hamburger-btn span::after{
 
 }
 .about-section .about-img .img-box{
-    padding: 50px;
+    padding: 30px;
 }
 .about-section .about-img .img-box img{
     width: 100%;
@@ -418,13 +424,33 @@ header .hamburger-btn span::after{
     flex: 0 0 33.33%;
     max-width:33.33%;
     padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .project-section .project-item-inner{
-    padding: 15px;
+    padding: 20px;
     border-radius: 5px;
+    cursor: pointer;
+    widows: 100%;
+    
 }
-.project-item-title{
-    margin: 20px;
+.project-section .project-item-inner p{
+    font-size: 18px;
+    margin: 20px 0 20px;
+    text-transform: capitalize;
+    color: var(--oliveDrab7);
+}
+.project-section .project-item-inner a{
+    font-size: 16px;
+    margin: 20px 0 20px;
+    text-transform: capitalize;
+}
+.project-section .project-item-img img{
+    border-radius: 5px;
+    width: 100%;
+}
+.project-section .project-item-inner:hover .project-item-img img{
+    transform: translateY(-10px);
 }
 /* header links*/
 /* header nav ul{
