@@ -469,10 +469,12 @@ header .hamburger-btn span::after{
     text-align: center;
     cursor: pointer;   
 }
-.contact-section .contact-item-inner i{
-
-   font-size: 25px;
-   color: var(--redwood);
+.contact-section .contact-item-inner a{
+    color:  #f54dc3;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin:15px 0 10px;
 
 }
 .contact-section .contact-item-inner span{
@@ -484,8 +486,7 @@ header .hamburger-btn span::after{
 .contact-section .contact-item-inner p{
     line-height: 26px;
     margin: 0;
-    font-size: 16px;
-   
+    font-size: 16px; 
 }
 
 /*Make the webpage responsive*/
@@ -526,6 +527,10 @@ header .hamburger-btn span::after{
         display: flex;
         flex-wrap: wrap;
     }
+    .contact-section .contact-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 15px;
 }
 @media (max-width: 414px){
     
@@ -577,60 +582,6 @@ header .hamburger-btn span::after{
     }
 }
 
-/*contact me*/
-.contact{
-    margin-top:5px ;
-}
-
-.contact h4{
-    background-color:var(--white);
-    justify-content: center;
-    align-items: baseline;
-    font-family: monospace;
-    font-size: 30px;
-    text-align:center;
-    padding: 20px 0px;
-    color: var(--text-color1);
-}
-.contact ul{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    background-color:var(--white);
-    text-align:center;
-    margin: 0 auto;
-    padding: 20px 0px;
-}
-.contact ul li{
-    display: inline-block;
-    padding: 0 10px;
-    list-style: none;
-}
-.contact ul li a{
-   
-    font-family: inherit;
-    font-size: 16px;
-    color: var(--text-color1);
-}
-/*desktop size */
-@media screen and (min-width: 992px){
-    .contact h4{
-        background-color:var(--white);
-        justify-content: center;
-        align-items: baseline;
-        font-size: 40px;
-        text-align:center;
-        padding: 20px 0px;
-    }
-    .contact ul li a{
-        font-size: 22px;
-        padding: 10px 0px;
-        color: var(--text-color1); 
-        flex-direction: row;
-        justify-content: center;
-         
-    }
-}
 /*phone size*/
 /*footer*/
 footer{
