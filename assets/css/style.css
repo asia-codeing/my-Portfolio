@@ -453,7 +453,7 @@ header .hamburger-btn span::after{
     transform: translateY(-10px);
 }
 .contact-section{
-    padding: 80px 0 80px;
+    padding: 100px 0 80px;
     min-height: 100vh;
 }
 .contact-section .contact-item{
@@ -464,7 +464,7 @@ header .hamburger-btn span::after{
     flex-wrap: wrap; */
 }
 .contact-section .contact-item-inner{
-    padding: 30px 15px;
+    padding: 40px 15px;
     border-radius: 5px;
     text-align: center;
     cursor: pointer;   
@@ -488,6 +488,26 @@ header .hamburger-btn span::after{
     margin: 0;
     font-size: 16px; 
 }
+
+/*footer*/
+footer{
+    margin-top: 5px;
+    background-color: var(--white);
+    color: var(--steelBlue);
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    font-family: monospace;
+}
+footer p {
+    color: var(--gray);
+    line-height: 24px;
+    margin: 0;
+    font-size: 13px;
+    margin-bottom: 24px;
+    padding: 10px;
+}
+
 
 /*Make the webpage responsive*/
 @media (max-width: 768px){
@@ -531,6 +551,7 @@ header .hamburger-btn span::after{
         flex: 0 0 100%;
         max-width: 100%;
         padding: 15px;
+}
 }
 @media (max-width: 414px){
     
@@ -580,36 +601,6 @@ header .hamburger-btn span::after{
         display: flex;
         flex-wrap: wrap;
     }
-}
-
-/*phone size*/
-/*footer*/
-footer{
-    margin-top: 5px;
-    background-color: var(--white);
-    color: var(--color);
-    text-align: center;
-    font-size: 20px;
-    padding: 10px;
-    font-family: monospace;
-}
-footer p {
-    color: var(--gray);
-    line-height: 24px;
-    margin: 0;
-    font-size: 16px;
-    margin-bottom: 24px;
-    padding: 10px;
-
-}
-/*desktop size */
-@media screen and (min-width: 992px){
-  footer{
-    font-size: 25px;
-  } 
-  footer p {  
-    font-size: 18px;
-  }
 }
 
 
