@@ -431,7 +431,7 @@ header .hamburger-btn span::after{
     padding: 20px;
     border-radius: 5px;
     cursor: pointer;
-    widows: 100%;
+    width: 100%;
     
 }
 .project-section .project-item-inner p{
@@ -452,6 +452,42 @@ header .hamburger-btn span::after{
 .project-section .project-item-inner:hover .project-item-img img{
     transform: translateY(-10px);
 }
+.contact-section{
+    padding: 80px 0 80px;
+    min-height: 100vh;
+}
+.contact-section .contact-item{
+    flex: 0 0 50%;
+    max-width:50%;
+    padding: 15px;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+.contact-section .contact-item-inner{
+    padding: 30px 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;   
+}
+.contact-section .contact-item-inner i{
+
+   font-size: 25px;
+   color: var(--redwood);
+
+}
+.contact-section .contact-item-inner span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin:15px 0 10px;
+}
+.contact-section .contact-item-inner p{
+    line-height: 26px;
+    margin: 0;
+    font-size: 16px;
+   
+}
+
 /*Make the webpage responsive*/
 @media (max-width: 768px){
     .home-section .home-text, .home-section .home-img {
