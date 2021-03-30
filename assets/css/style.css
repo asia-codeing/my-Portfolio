@@ -20,6 +20,7 @@
 body{
     background-color:var(--albaster);
     overflow-x: hidden;
+    font-size: 18px;
 }
 
 .outer-shadow{
@@ -402,7 +403,7 @@ header .hamburger-btn span::after{
     flex: 0 0 60%;
     max-width: 60%;
     height: 55vh;
-    padding: 0 15px;
+    padding: 50px 30px;
 
 }
 .about-section .info p{
@@ -513,8 +514,7 @@ footer p {
 @media (max-width: 1056px){
     .home-section .home-text, .home-section .home-img {
         flex: 0 0 100%;
-        max-width: 100%;
-        
+        max-width: 100%;   
     }
     .home-section .home-text{
         order: 2;
@@ -534,6 +534,50 @@ footer p {
     }
     .effect-5{
         bottom: 50%;
+        right: 6%;
+    }
+    .about-section .about-img {
+        flex: 0 0 50%;
+        padding: 0px 20px;
+        margin-left: 250px;
+    }
+    .about-section .info {
+        flex: 0 0 99%;
+        max-width: 100%;
+        /* padding: 25px 15px; */
+        order: 2;
+    }
+    .project-section .project-item {
+        flex: 0 0 70%;
+        max-width: 100%;
+        margin-left: 150px;
+    }
+    .contact-section .contact-item {
+        flex: 0 0 80%;
+        max-width: 100%;
+        margin-left: 100px;
+    }
+}
+@media (max-width: 1025px){
+    .home-section .home-text, .home-section .home-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+        
+    }
+    .home-section .home-text{
+        order: 2;
+        text-align: center;
+        margin-top:-150;
+    }
+    .home-section .home-img {
+        max-width: 500px;
+        margin: 20px 0 0 270px;
+    }
+    .effect-2{
+        bottom : 50%;
+      }
+    .effect-5{
+        bottom: 50%;
         right: 10%;
     }
     .about-section .about-img {
@@ -544,63 +588,22 @@ footer p {
     .about-section .info {
         flex: 0 0 99%;
         max-width: 100%;
-        padding: 25px 15px;
+        /* padding: 25px 15px; */
         order: 2;
     }
     .project-section .project-item {
-        flex: 0 0 70%;
+        flex: 0 0 80%;
         max-width: 100%;
-        margin-left: 150px;
-    }
-    .contact-section .contact-item {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding: 15px;
-}
-}
-@media (max-width: 1024px){
-    .home-section .home-text, .home-section .home-img {
-        flex: 0 0 100%;
-        max-width: 100%;
-        
-    }
-    .home-section .home-text{
-        order: 2;
-        text-align: center;
-        margin-top:-330px;
-    }
-    .home-section .home-img {
-        max-width: 500px;
-        margin: 0px 0 0 260px;
-    }
-    .effect-2{
-        bottom : 40%;
-      }
-    .effect-5{
-        bottom: 50%;
-        right: 10%;
-    }
-    .about-section .about-img {
-        flex: 0 0 70%;
-        padding: 0px 20px;
-        margin-left: 120px;
-    }
-    .about-section .info {
-        flex: 0 0 99%;
-        max-width: 100%;
-        padding: 25px 15px;
-        order: 2;
-    }
-    .project-section .project-item {
-        flex: 0 0 100%;
-        max-width: 100%;
+        margin-left: 100px;
         padding: 15px;
         display: flex;
         flex-wrap: wrap;
     }
     .contact-section .contact-item {
-        flex: 0 0 100%;
+        flex: 0 0 80%;
         max-width: 100%;
+        margin-left: 100px;
+
         padding: 15px;
 }
 }
@@ -631,7 +634,7 @@ footer p {
     .about-section .info {
         flex: 0 0 99%;
         max-width: 100%;
-        padding: 25px 15px;
+        /* padding: 25px 15px; */
         order: 2;
     }
     .project-section .project-item {
@@ -674,26 +677,26 @@ footer p {
         bottom: 40%;
         right:6%;
     }
-}
-@media (max-width: 414px){
     .about-section .about-img {
         flex: 0 0 100%;
-        padding: 0px 20px;
+        padding: 0px 30px;
         margin-left: 0;
     }
     .about-section .info {
         flex: 0 0 99%;
         max-width: 100%;
         height: 55vh;
-        padding: 25px 15px;
         order: 2;
     }
     .project-section .project-item {
         flex: 0 0 100%;
         max-width: 100%;
         padding: 15px;
-        display: flex;
-        flex-wrap: wrap;
+       margin-left: 0;
+    }
+    .contact-section .contact-item {
+        flex: 0 0 100%;
+       margin-left: 0;
     }
 }
 
