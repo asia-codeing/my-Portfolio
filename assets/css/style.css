@@ -596,9 +596,9 @@ footer p {
         right: 20%;
     }
     .about-section .about-img {
-        flex: 0 0 70%;
+        flex: 0 0 60%;
         padding: 0px 20px;
-        margin-left: 120px;
+        margin-left: 150px;
     }
     .about-section .info {
         flex: 0 0 99%;
@@ -608,6 +608,7 @@ footer p {
     .project-section .project-item {
         flex: 0 0 100%;
         max-width: 100%;
+        margin-left:0px;
         padding: 15px;
         display: flex;
         flex-wrap: wrap;
@@ -615,7 +616,7 @@ footer p {
     .contact-section .contact-item {
         flex: 0 0 100%;
         max-width: 100%;
-        padding: 15px;
+        margin-left:0px;
     }
 }
 @media (max-width: 540px){
