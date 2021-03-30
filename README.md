@@ -22,7 +22,7 @@ This is my professional portfolio you may found my latest projects, and any thin
 * JavaScript
 
 ## Screenshot to deployed application
-![[My-Portfolio](./assets/images/asia-portfolio.gif)
+![My-Portfolio](./assets/images/asia-portfolio.gif)
 ![Responsiveness](./assets/images/responsiveness.gif)
 
 ## License
