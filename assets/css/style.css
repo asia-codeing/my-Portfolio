@@ -15,7 +15,6 @@
     --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
     --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
     --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
-
 }
 body{
     background-color:var(--albaster);
@@ -29,9 +28,6 @@ body{
 .inner-shadow{
     box-shadow: var(--inner-shadow);
 }
-/* .container{
-    background-color: red;
-} */
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -86,17 +82,17 @@ body{
     animation: spin 10s linear infinite;
 }
 .effect-2{
-  width: 100px;
-  height: 100px;
-  position: relative;
-  left:-40px;
-  border: 6px solid var(--shadow2) ;
-  bottom : 30%;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 50%;
-  overflow: hidden;
-  animation: topBounce 5s infinite;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left:-40px;
+    border: 6px solid var(--shadow2) ;
+    bottom : 30%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: topBounce 5s infinite;
 }
 .effect-2 div{
     width:3px;
@@ -127,29 +123,28 @@ body{
     top:-25px;
 }
 .effect-5{
-   height: 40px;
-   width: 40px;
-   right: 4%;
-   bottom: 30%;
-   display: flex;
-   justify-content: space-between;
-   border-radius: 60%;
-   overflow: hidden;
+    height: 40px;
+    width: 40px;
+    right: 4%;
+    bottom: 30%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 60%;
+    overflow: hidden;
 }
 .effect-5 div{
     width:1px;
     background-color: rgb(238, 130, 180);
   
 }
-  
+/*Make the shapes animated*/
 @keyframes spin {
     0%{
         transform: rotate(0deg);
     }
     100%{
         transform: rotate(360deg);
-    }
-    
+    }    
 }
 @keyframes topBounce {
     0%,100%{
@@ -201,7 +196,7 @@ header{
     left:0;
     z-index: 99;
 }
-/*my logo*/
+/*-----my logo----*/
 header .logo a{
     display: inline-block;
     text-align: center;
@@ -250,7 +245,7 @@ header .hamburger-btn span::before{
 header .hamburger-btn span::after{
     top: 6px;
 }
-/*Navigation menu*/
+/*----Navigation menu-----*/
 .nav-menu{
     position: fixed;
     background-color:var(--babyPowder);
@@ -269,7 +264,6 @@ header .hamburger-btn span::after{
     z-index: 999;
     opacity: 1;
 }
-
 .nav-menu .close-nav-menu{
     height: 40px;
     width: 40px;
@@ -283,7 +277,6 @@ header .hamburger-btn span::after{
     text-align: center;
     color:var(--oliveDrab7);
     transition: all 0.3s ease-out;
-
 }
 .nav-menu .close-nav-menu::after{
     border-radius: 50%;
@@ -293,22 +286,17 @@ header .hamburger-btn span::after{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .nav-menu ul{
-    /* background-color: rgb(151, 151, 224); */
     padding: 15px;
 }
 .nav-menu ul li{
     display: block;
     margin-bottom:20px;
     text-align: center;
-
 }
 .nav-menu ul li:last-child{
-   
-    margin-bottom:0;
-    
+    margin-bottom:0;   
 }
 .nav-menu ul li a{
     display: inline-block;
@@ -323,11 +311,10 @@ header .hamburger-btn span::after{
 .nav-menu ul li a.active{
     color: var(--redwood);
 }
-
 .nav-menu ul li a::after{
     border-radius: 30px;
 }
-/*Home*/
+/*-------Home------*/
 .home-section{
     position: relative;
 }
@@ -340,8 +327,6 @@ header .hamburger-btn span::after{
     flex: 0 0 50%;
     max-width: 50%;
     padding: 0 15px;
-    
-
 }
 .home-section .home-text {
     padding: 70px;
@@ -363,7 +348,6 @@ header .hamburger-btn span::after{
     font-size: 20px;
     font-weight: 600;
     margin: 0;
-
 }
 .home-section .home-img .img-box{
     max-width: 450px;
@@ -371,15 +355,13 @@ header .hamburger-btn span::after{
     margin: 10px;
     border-radius:50%;
     padding: 10px;
-    
-
 }
 .home-section .home-img .img-box img{
     width:100%; 
     border-radius: 50%;
     border: 6px solid transparent; 
 }
-/*About me*/
+/*-------About me------*/
 .about-section{
     padding: 80px 0 80px;
     min-height: 100vh;
@@ -387,8 +369,6 @@ header .hamburger-btn span::after{
 .about-section .about-img{
     flex: 0 0 40%;
     padding: 0 15px;
-
-
 }
 .about-section .about-img .img-box{
     padding: 30px;
@@ -404,7 +384,6 @@ header .hamburger-btn span::after{
     max-width: 60%;
     height: 55vh;
     padding: 50px 30px;
-
 }
 .about-section .info p{
     line-height: 26px;
@@ -416,7 +395,7 @@ header .hamburger-btn span::after{
 .about-section .info .btn {
  margin: 30px 20px 0 0;
 }
-/*  My projects*/
+/*----My projects-----*/
 .project-section{
     padding: 80px 0 80px;
     min-height: 100vh;
@@ -432,8 +411,7 @@ header .hamburger-btn span::after{
     padding: 20px;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
-    
+    width: 100%;   
 }
 .project-section .project-item-inner p{
     font-size: 18px;
@@ -461,8 +439,6 @@ header .hamburger-btn span::after{
     flex: 0 0 50%;
     max-width:50%;
     padding: 15px;
-    /* display: flex;
-    flex-wrap: wrap; */
 }
 .contact-section .contact-item-inner{
     padding: 40px 15px;
@@ -476,7 +452,6 @@ header .hamburger-btn span::after{
     font-size: 16px;
     font-weight: 600;
     margin:15px 0 10px;
-
 }
 .contact-section .contact-item-inner span{
     display: block;
@@ -489,8 +464,7 @@ header .hamburger-btn span::after{
     margin: 0;
     font-size: 16px; 
 }
-
-/*footer*/
+/*-----footer-------*/
 footer{
     margin-top: 5px;
     background-color: var(--white);
@@ -544,7 +518,6 @@ footer p {
     .about-section .info {
         flex: 0 0 99%;
         max-width: 100%;
-        /* padding: 25px 15px; */
         order: 2;
     }
     .project-section .project-item {
@@ -561,8 +534,7 @@ footer p {
 @media (max-width: 1025px){
     .home-section .home-text, .home-section .home-img {
         flex: 0 0 100%;
-        max-width: 100%;
-        
+        max-width: 100%;  
     }
     .home-section .home-text{
         order: 2;
@@ -588,7 +560,6 @@ footer p {
     .about-section .info {
         flex: 0 0 99%;
         max-width: 100%;
-        /* padding: 25px 15px; */
         order: 2;
     }
     .project-section .project-item {
@@ -603,15 +574,13 @@ footer p {
         flex: 0 0 80%;
         max-width: 100%;
         margin-left: 100px;
-
         padding: 15px;
-}
+    }
 }
 @media (max-width: 768px){
     .home-section .home-text, .home-section .home-img {
         flex: 0 0 100%;
-        max-width: 100%;
-        
+        max-width: 100%;   
     }
     .home-section .home-text{
         order: 2;
@@ -634,7 +603,6 @@ footer p {
     .about-section .info {
         flex: 0 0 99%;
         max-width: 100%;
-        /* padding: 25px 15px; */
         order: 2;
     }
     .project-section .project-item {
@@ -652,94 +620,91 @@ footer p {
 }
 @media (max-width: 540px){
     .home-section .home-text, .home-section .home-img {
-            flex: 1 0 55%;
-            max-width: 100%;  
-        }
-        .home-section .home-img  {
-            max-width: 265px;
-            margin-left: 140px;
-        }
-        .home-section .home-text{
-            order: 2;
-            margin-top: -130px;  
-        }
-        .home-section .home-text h2{
-            margin: 3px;
-           font-size: 30px;  
-        }
-        .effect-1{
-            width: 20px;
-            height: 20px;
-            top : 15%;
-        }
-    
-        .effect-2{
-            top: 55%;
-            width: 100px;
-            height: 100px;
-        }
-        .effect-3{
-            width: 130px;
-            height: 120px;
-            left: 30%;
-            top:-52px;
-        }
-    
-        .effect-4{
-            bottom: -60px;
-            right: 20%;
-        }
-        .effect-5{
-            width: 30px;
-            height: 30px;
-            bottom: 40%;
-            right:6%;
-        }
-        .about-section .about-img {
-            flex: 0 0 70%;
-            padding: 0px 20px;
-            margin-left: 70px;
-        }
-        .about-section .about-img .img-box {
-            padding: 16px;
-        }
-        .about-section .info {
-            flex: 0 0 99%;
-            max-width: 100%;
-            height: 55vh;
-            order: 2;
-            padding-top: 3;
-        }
-        .project-section .project-item {
-            flex: 0 0 100%;
-            max-width: 100%;
-            padding: 15px;
-            margin-left: 0;
-        }
-        .project-section .project-item-inner{
-            padding: 20px 10px 30px 10px ;
-    
-        }
-        .project-section .project-item-inner p{
-            font-size: 16px;
-        }
-        .project-section .project-item-inner a{
-            font-size: 16px;
-            margin: 20px 0 20px;
-            text-transform: capitalize;
-        }
-        .contact-section .contact-item {
-            flex: 0 0 100%;
-           margin-left: 0;
-        }
+        flex: 1 0 55%;
+        max-width: 100%;  
     }
+    .home-section .home-img  {
+        max-width: 265px;
+        margin-left: 140px;
+    }
+    .home-section .home-text{
+        order: 2;
+        margin-top: -130px;  
+    }
+    .home-section .home-text h2{
+        margin: 3px;
+    font-size: 30px;  
+    }
+    .effect-1{
+        width: 20px;
+        height: 20px;
+        top : 15%;
+    }
+    .effect-2{
+        top: 55%;
+        width: 100px;
+        height: 100px;
+    }
+    .effect-3{
+        width: 130px;
+        height: 120px;
+        left: 30%;
+        top:-52px;
+    }
+    .effect-4{
+        bottom: -60px;
+        right: 20%;
+    }
+    .effect-5{
+        width: 30px;
+        height: 30px;
+        bottom: 40%;
+        right:6%;
+    }
+    .about-section .about-img {
+        flex: 0 0 70%;
+        padding: 0px 20px;
+        margin-left: 70px;
+    }
+    .about-section .about-img .img-box {
+        padding: 16px;
+    }
+    .about-section .info {
+        flex: 0 0 99%;
+        max-width: 100%;
+        height: 55vh;
+        order: 2;
+        padding-top: 3;
+    }
+    .project-section .project-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 15px;
+        margin-left: 0;
+    }
+    .project-section .project-item-inner{
+        padding: 20px 10px 30px 10px ;
+
+    }
+    .project-section .project-item-inner p{
+        font-size: 16px;
+    }
+    .project-section .project-item-inner a{
+        font-size: 16px;
+        margin: 20px 0 20px;
+        text-transform: capitalize;
+    }
+    .contact-section .contact-item {
+        flex: 0 0 100%;
+    margin-left: 0;
+    }
+}
     
 @media (max-width: 414px){
     
     .home-section .home-text, .home-section .home-img {
         flex: 1 0 55%;
-        max-width: 100%;
-        
+        max-width: 100%;   
     }
     .home-section .home-img  {
         max-width: 300px;
@@ -750,8 +715,7 @@ footer p {
         order: 2;
         margin-top: 3px;
         text-align: center;
-        padding: 0px;
-       
+        padding: 0px;  
     }
     .effect-4{
         bottom: 70%;
@@ -836,7 +800,7 @@ footer p {
     }
 }
 @media (max-width: 280px){
-.home-section .home-text, .home-section .home-img {
+    .home-section .home-text, .home-section .home-img {
         flex: 1 0 55%;
         max-width: 100%;  
     }
