@@ -510,6 +510,49 @@ footer p {
 
 
 /*Make the webpage responsive*/
+@media (max-width: 1024px){
+    .home-section .home-text, .home-section .home-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+        
+    }
+    .home-section .home-text{
+        order: 2;
+        text-align: center;
+        margin-top:-330px;
+    }
+    .home-section .home-img {
+        max-width: 500px;
+        margin: 0px 0 0 260px;
+    }
+    .effect-5{
+        bottom: 50%;
+        right: 20%;
+    }
+    .about-section .about-img {
+        flex: 0 0 70%;
+        padding: 0px 20px;
+        margin-left: 120px;
+    }
+    .about-section .info {
+        flex: 0 0 99%;
+        max-width: 100%;
+        padding: 25px 15px;
+        order: 2;
+    }
+    .project-section .project-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-section .contact-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 15px;
+}
+}
 @media (max-width: 768px){
     .home-section .home-text, .home-section .home-img {
         flex: 0 0 100%;
