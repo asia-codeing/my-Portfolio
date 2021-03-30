@@ -1,5 +1,5 @@
 # My-Portfolio
-
+This is my professional portfolio you may found my latest projects, and any think that you need it to know about my contact and work you may find it here
 
 ## Table of contents
 * [Launch](#Launch)
@@ -10,6 +10,8 @@
 * [Contact-info](#contact-info)
 
 ## Launch
+* When you run the link it will show you to the home page 
+* To change the pages you need to navigate the section that you need through the menu button on the top right of the webpage
 
 ## Link to deployed application
 [My-Portfolio](https://asia-codeing.github.io/my-Portfolio/)
@@ -20,6 +22,7 @@
 * JavaScript
 
 ## Screenshot to deployed application
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
