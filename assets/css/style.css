@@ -699,6 +699,54 @@ footer p {
        margin-left: 0;
     }
 }
+@media (max-width: 375px){
+    
+    .home-section .home-text, .home-section .home-img {
+        flex: 1 0 55%;
+        max-width: 100%;  
+    }
+    .home-section .home-img  {
+        max-width: 300px;
+        margin-left: 40px;
+    }
+    .home-section .home-text{
+        order: 2;
+        margin-top: -30px;  
+    }
+    .home-section .home-text h2{
+        margin: 3px;
+       font-size: 40px;  
+    }
+    .effect-4{
+        bottom: -60px;
+        right: 20%;
+    }
+    .effect-5{
+        bottom: 40%;
+        right:6%;
+    }
+    .about-section .about-img {
+        flex: 0 0 100%;
+        padding: 0px 30px;
+        margin-left: 0;
+    }
+    .about-section .info {
+        flex: 0 0 99%;
+        max-width: 100%;
+        height: 55vh;
+        order: 2;
+    }
+    .project-section .project-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 15px;
+        margin-left: 0;
+    }
+    .contact-section .contact-item {
+        flex: 0 0 100%;
+       margin-left: 0;
+    }
+}
 
 
 
